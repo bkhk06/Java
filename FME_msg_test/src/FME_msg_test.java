@@ -64,7 +64,7 @@ public class FME_msg_test extends Thread {
 			/*String to int conversion*/ 
 			try {
 				time_interval = Integer.parseInt(time_interval_s);
-				logger.info("Sleep time_interval: " + time_interval + " ms");
+				logger.info("Sleep time_interval: " + time_interval + " s");
 			} catch (NumberFormatException e) {
 				e.printStackTrace();
 				logger.error(e.fillInStackTrace());
@@ -91,7 +91,7 @@ public class FME_msg_test extends Thread {
 			// 创建PreparedStatement
 			ps_mfg = ct_mfg.prepareStatement(sql_mfg);
 			// 创建PreparedStatement
-			ps_test = ct_mfg.prepareStatement(sql_test);
+			ps_test = ct_test.prepareStatement(sql_test);
 			// 执行SQL
 			
 			//保存上一次查询报文结果，便于比较
@@ -102,7 +102,7 @@ public class FME_msg_test extends Thread {
 				tmp_mfg=num_mfg;
 				tmp_test=num_test;
 				try {
-					Thread.sleep(time_interval);//
+					Thread.sleep(time_interval*1000);//
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -114,7 +114,7 @@ public class FME_msg_test extends Thread {
 				rs_mfg = ps_mfg.executeQuery();
 				// 对获取的数据进行操作
 				while (rs_mfg.next()) {
-					logger.info("Stock quantity of production database: " + rs_mfg.getInt(key_word));
+					logger.info("Stock quantity of production database: " + rs_mfg.getInt(1));
 					num_mfg = rs_mfg.getInt(key_word);
 				}
 				
@@ -122,7 +122,7 @@ public class FME_msg_test extends Thread {
 				rs_test = ps_test.executeQuery();
 				// 对获取的数据进行操作
 				while (rs_test.next()) {
-					logger.info("Stock quantity of test database: " + rs_test.getInt(key_word));
+					logger.info("Stock quantity of test database: " + rs_test.getInt(1));
 					num_test = rs_test.getInt(key_word);
 				}
 
@@ -130,8 +130,8 @@ public class FME_msg_test extends Thread {
 				logger.info("Stock D-Value of message  between  production and test databases: " + (num_mfg - num_test));
 				if((num_mfg - num_test)!=0)
 					logger.error("WARNING!!!! Stock message  between  production and test databases are different!!!");
-				logger.info("Increment quantity of message for production database in "+time_interval/1000+"s: " + (num_mfg - tmp_mfg));
-				logger.info("Increment quantity of message for test database in "+time_interval/1000+"s: " + (num_test -tmp_test ));
+				logger.info("Increment quantity of message for production database in "+time_interval+"s: " + (num_mfg - tmp_mfg));
+				logger.info("Increment quantity of message for test database in "+time_interval+"s: " + (num_test -tmp_test ));
 				logger.info("Increment D-Value of message comparision between  production and test databases: " + (num_mfg - tmp_mfg-(num_test -tmp_test)));
 				if((((num_mfg - tmp_mfg)-(num_test -tmp_test))!=0))
 					logger.error("WARNING!!!! Increment message  between  production and test databases are different!!!");
