@@ -33,7 +33,7 @@ public class MainFace extends JFrame {
  
             public void keyTyped(KeyEvent e) {
                 //键入某个键时调用此方法
-                if (e.getKeyChar() == 'E') {
+                if (e.getKeyChar() == 'Q') {
                     System.exit(1);
                 }
             }
