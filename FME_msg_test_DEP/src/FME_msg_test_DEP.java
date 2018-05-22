@@ -287,7 +287,6 @@ public class FME_msg_test_DEP<Bookinfo> extends Thread {
 						map_test.put(flightid_test, atot_test);
 					}
 					
-	
 					// 对获取的数据进行操作--生产库
 					rs_mfg = ps_mfg_msg.executeQuery();
 					while (rs_mfg.next()) {
@@ -415,7 +414,6 @@ public class FME_msg_test_DEP<Bookinfo> extends Thread {
 			if (ct_mfg != null) {
 				ct_mfg.close();
 			}
-			
 			if (ct_test != null) {
 				ct_test.close();
 			}
