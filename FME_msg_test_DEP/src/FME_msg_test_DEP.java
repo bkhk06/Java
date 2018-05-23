@@ -55,7 +55,8 @@ public class FME_msg_test_DEP<Bookinfo> extends Thread {
 	private static String sql_test = null;
 	private static String sql_count = null;
 	private static String sql_dep = null;
-	private static String sql_fc = null;
+	private static String sql_fc_mfg = null;
+	private static String sql_fc_test = null;
 	private static String sql_msg = null;
 	private static long time_interval = 0;
 	private static int loop_times = 0;
@@ -91,7 +92,8 @@ public class FME_msg_test_DEP<Bookinfo> extends Thread {
 			sql_test = prop_sql.getProperty("sql_test");
 			sql_count = prop_sql.getProperty("sql_count");
 			sql_dep = prop_sql.getProperty("sql_dep");
-			sql_fc = prop_sql.getProperty("sql_fc");
+			sql_fc_mfg = prop_sql.getProperty("sql_fc_mfg");
+			sql_fc_test = prop_sql.getProperty("sql_fc_test");
 			sql_msg = prop_sql.getProperty("sql_msg");
 			DEP_AP = prop_sql.getProperty("DEP_AP");
 			
@@ -128,8 +130,8 @@ public class FME_msg_test_DEP<Bookinfo> extends Thread {
 			ps_mfg_count = ct_mfg.prepareStatement(sql_count);
 			ps_test_count = ct_test.prepareStatement(sql_count);
 
-			ps_mfg_fc = ct_mfg.prepareStatement(sql_fc);
-			ps_test_fc = ct_test.prepareStatement(sql_fc);
+			ps_mfg_fc = ct_mfg.prepareStatement(sql_fc_mfg);
+			ps_test_fc = ct_test.prepareStatement(sql_fc_test);
 			
 			ps_mfg_msg = ct_mfg.prepareStatement(sql_msg);
 			ps_test_msg = ct_test.prepareStatement(sql_msg);
@@ -335,12 +337,10 @@ public class FME_msg_test_DEP<Bookinfo> extends Thread {
 										
 					logger.info("DEP message compare between test and mfg FME_TODAY done~");
               
-                    //清空map，便于下一次判断
+                    //清空map，便于下一次循环
 					map_mfg.clear();
 					map_test.clear();
 					
-					
-
 					loop_times = 0;// reset loop_times
 				}
 
