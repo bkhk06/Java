@@ -30,6 +30,7 @@ public class Test {
 		
 		//为按钮添加监听器
 		exitButton.addActionListener(new ActionListener() {
+			
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
 				JOptionPane.showMessageDialog(null,"程序即将退出...");
