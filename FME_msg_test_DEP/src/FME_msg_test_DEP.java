@@ -31,6 +31,8 @@ public class FME_msg_test_DEP<Bookinfo> extends Thread {
 	private static int count_test = 0;
 	private static String flightid_mfg = null;
 	private static String flightid_test = null;
+	private static String flightap_mfg=null;
+	private static String flightap_test=null;
 
 	private static Connection ct_mfg = null;
 	private static PreparedStatement ps_mfg = null;
@@ -194,19 +196,21 @@ public class FME_msg_test_DEP<Bookinfo> extends Thread {
 				// ArrayList<Bookinfo> books=new ArrayList<Bookinfo>();
 				while (rs_mfg.next()) {
 					// logger.info("begin read the result_mfg!");
-					atot_mfg = rs_mfg.getString(2);
 					flightid_mfg = rs_mfg.getString(1);
+					atot_mfg = rs_mfg.getString(2);	
+					flightap_mfg=rs_mfg.getString(3);
 				}
 
 				rs_test = ps_test.executeQuery();
 				// 对获取的数据进行操作
 				while (rs_test.next()) {
-					atot_test = rs_test.getString(2);
 					flightid_test = rs_test.getString(1);
+					atot_test = rs_test.getString(2);	
+					flightap_test=rs_test.getString(3);
 				}
 
 				if (atot_mfg == null || atot_test == null) {
-					logger.error("ATOT result is invalid, please check!!!" + flightid_mfg + ": " + atot_mfg + "||"
+					logger.error("ATOT result is NULL!" + flightid_mfg + ": " + atot_mfg + "||"
 							+ flightid_test + ": " + atot_test);
 					continue;
 				}
@@ -214,12 +218,12 @@ public class FME_msg_test_DEP<Bookinfo> extends Thread {
 				// 比较正式库和测试库报文增量
 				if (!atot_test.equals(atot_mfg)) {
 					logger.error("WARNING!!!! DEP msg  between  production and test databases are different!!!");
-					logger.info("Latest ATOT in production databases: " + flightid_mfg + ": " + atot_mfg);
-					logger.info("Latest ATOT in test databases: " + flightid_test + ": " + atot_test);
+					logger.info("Latest ATOT in production databases: " + flightid_mfg + " DEP_AP: "+flightap_mfg+", ATOT: " + atot_mfg);
+					logger.info("Latest ATOT in test databases: " + flightid_test + " DEP_AP: "+flightap_test+", ATOT: " + atot_test);
 				} else {
 					logger.info("Latest ATOT  between  production and test databases are Same!!!");
-					logger.info("Latest ATOT in production databases: " + flightid_mfg + ": " + atot_mfg);
-					logger.info("Latest ATOT in test databases: " + flightid_test + ": " + atot_test);
+					logger.info("Latest ATOT in production databases: " + flightid_mfg + " DEP_AP: "+flightap_mfg+", ATOT: " + atot_mfg);
+					logger.info("Latest ATOT in test databases: " + flightid_test + " DEP_AP: "+flightap_test+", ATOT: " + atot_test);
 				}
 
 				// 比较各个机场FME_TODAY起飞报报文数量-----------------------------------------------------------------------------------------------
@@ -298,16 +302,16 @@ public class FME_msg_test_DEP<Bookinfo> extends Thread {
 					logger.info("Begin create HashMap");
 					rs_test = ps_test_msg.executeQuery();
 					while (rs_test.next()) {
-						atot_test = rs_test.getString(2);
 						flightid_test = rs_test.getString(1);
+						atot_test = rs_test.getString(2);						
 						map_test.put(flightid_test, atot_test);
 					}
 
 					// 对获取的数据进行操作--生产库
 					rs_mfg = ps_mfg_msg.executeQuery();
 					while (rs_mfg.next()) {
-						atot_mfg = rs_mfg.getString(2);
 						flightid_mfg = rs_mfg.getString(1);
+						atot_mfg = rs_mfg.getString(2);						
 						map_mfg.put(flightid_mfg, atot_mfg);
 					} /* 数据入HashMap， */
 					logger.info("End create HashMap");
