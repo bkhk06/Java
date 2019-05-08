@@ -11,7 +11,8 @@ public class Test {
 		map1.put("c", "cc");
 		map2.put("1", "11");
 		map2.put("b", "22");
-		map2.put("3", "33");
+		map2.put("3", "34");
+		
 		Iterator<String> it = map1.keySet().iterator();
 		while(it.hasNext()){
 			Object key = it.next();
