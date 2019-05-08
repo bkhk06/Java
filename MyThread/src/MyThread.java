@@ -7,7 +7,7 @@ public class MyThread extends Thread {
             System.out.print(i);
             try {
                 Thread.sleep(5000);
-                System.out.print("    Ïß³ÌË¯Ãß5Ãë£¡\n");
+                System.out.print("This is thread test!\n");
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
