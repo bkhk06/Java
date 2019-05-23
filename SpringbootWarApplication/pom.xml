@@ -10,7 +10,7 @@
     </parent>
     <groupId>adcc.com</groupId>
     <artifactId>springboot_war</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>springboot_war</name>
     <description>Demo project for Spring Boot</description>
     <packaging>war</packaging>
@@ -23,7 +23,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <!--scope>provided</scope-->
             <exclusions>
                 <exclusion>
                     <groupId>org.springframework.boot</groupId>
@@ -32,9 +31,14 @@
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>3.1.0</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>tomcat-servlet-api</artifactId>
+            <version>7.0.42</version>
             <scope>provided</scope>
         </dependency>
 
@@ -48,20 +52,21 @@
     <build>
         <plugins>
 
+            <!--
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-            <!--注释spring-boot-maven-plugin，使用maven-war-plugin
+            注释spring-boot-maven-plugin，使用maven-war-plugin-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <configuration>
-                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                    <warSourceExcludes>src/main/resources/**</warSourceExcludes>
+                    <warName>springboot</warName>
                 </configuration>
-            </plugin>-->
+            </plugin>
         </plugins>
-        <finalName>SpringbootWarApplication</finalName>
     </build>
 
 </project>
