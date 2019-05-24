@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41ab0b33-04bb-49ee-9f45-4d32c4673905" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../demo1/src/main/java/com/springboot/demo1/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo1/src/main/java/com/springboot/demo1/hello.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo1/src/main/java/com/springboot/demo1/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo1/src/main/java/com/springboot/demo1/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
@@ -202,7 +203,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="950" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28144988" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
