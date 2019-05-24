@@ -1,4 +1,4 @@
-package com.github.carter659.spring10;
+package adcc.com.springboot_war;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
