@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41ab0b33-04bb-49ee-9f45-4d32c4673905" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../demo1/src/main/java/com/springboot/demo1/hello.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo1/src/main/java/com/springboot/demo1/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo1/src/main/java/com/springboot/demo1/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../readinglist/src/main/java/com/hawk/readinglist/ReadingListController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../readinglist/src/main/java/com/hawk/readinglist/ReadingListRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../readinglist/src/main/resources/static/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../readinglist/src/main/resources/templates/readingList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sbia_examples/ch02/src/main/java/readinglist/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/../readinglist/src/main/java/com/hawk/readinglist/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
@@ -53,8 +56,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/github/carter659/spring10/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+            <state relative-caret-position="297">
+              <caret line="9" column="8" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#306#307#0" expanded="true" />
@@ -78,7 +81,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-1928" />
     <option name="y" value="950" />
     <option name="width" value="1936" />
@@ -185,12 +188,12 @@
       <option name="presentableId" value="Default" />
       <updated>1558612798865</updated>
       <workItem from="1558612801894" duration="2062000" />
-      <workItem from="1558616682145" duration="7514000" />
+      <workItem from="1558616682145" duration="8241000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9576000" />
+    <option name="totallyTimeSpent" value="10303000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -203,6 +206,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="950" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28144988" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -269,8 +273,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/carter659/spring10/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        <state relative-caret-position="297">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#306#307#0" expanded="true" />
