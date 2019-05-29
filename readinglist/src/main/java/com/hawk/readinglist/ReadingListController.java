@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @Controller
-@RequestMapping("/readingList")
+@RequestMapping("/")
 public class ReadingListController {
 
 	private static final String reader = "craig";
