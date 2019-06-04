@@ -1,8 +1,10 @@
 spring:
   datasource:
-    url: jdbc:mysql://192.168.11.136:3306/readinglist?characterEncoding=utf8
+    #url: jdbc:mysql://192.168.11.136:3306/readinglist?characterEncoding=utf8
+    url: jdbc:mysql://127.0.0.1:3306/readinglist?characterEncoding=utf8
     username: root
-    password: woodcar
+    #password: woodcar
+    password: AdccAdcc
   jpa:
     database: MYSQL
     show-sql: true
