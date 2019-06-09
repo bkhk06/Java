@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d237413a-c461-44ce-8326-91e40df7e706" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Optional_Demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Optional_Demo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Student_demo/src/main/java/com/student/demo/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Student_demo/src/main/java/com/student/demo/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../boottest-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../boottest-master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-boot-samples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-samples/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d237413a-c461-44ce-8326-91e40df7e706" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Java8Tester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
+            <state relative-caret-position="72">
+              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -141,12 +136,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1560050373335</updated>
-      <workItem from="1560050376805" duration="1073000" />
+      <workItem from="1560050376805" duration="1075000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1073000" />
+    <option name="totallyTimeSpent" value="1075000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="28" y="24" width="1280" height="719" extended-state="0" />
@@ -164,7 +159,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32854864" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32854864" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -190,8 +185,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Java8Tester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="72">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
         </state>
       </provider>
     </entry>
