@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a763af9-cab4-4617-a7fb-63dfdfc46340" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Optional_demo2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Optional_demo2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Student_demo/src/main/java/com/student/demo/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Student_demo/src/main/java/com/student/demo/StudentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../boottest-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../boottest-master/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-boot-samples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-samples/.idea/workspace.xml" afterDir="false" />
@@ -115,6 +115,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="514" y="38" width="1280" height="719" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Favorites" side_tool="true" />

@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="837baada-afdb-49df-a280-20f8132bc95f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../Optional_Demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Optional_Demo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Optional_demo2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Optional_demo2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Student_demo/src/main/java/com/student/demo/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Student_demo/src/main/java/com/student/demo/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-boot-samples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-samples/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
@@ -217,6 +217,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="28" y="24" width="1280" height="719" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Web" side_tool="true" />
       <window_info id="Designer" />

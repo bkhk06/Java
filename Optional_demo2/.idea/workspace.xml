@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d237413a-c461-44ce-8326-91e40df7e706" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Java8Tester.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Optional_Demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Optional_Demo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Student_demo/src/main/java/com/student/demo/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Student_demo/src/main/java/com/student/demo/StudentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../boottest-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../boottest-master/.idea/workspace.xml" afterDir="false" />
@@ -52,7 +51,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="28" />
-    <option name="y" value="23" />
+    <option name="y" value="24" />
     <option name="width" value="1280" />
     <option name="height" value="719" />
   </component>
@@ -88,6 +87,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
@@ -141,15 +141,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1560050373335</updated>
-      <workItem from="1560050376805" duration="478000" />
+      <workItem from="1560050376805" duration="1073000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="478000" />
+    <option name="totallyTimeSpent" value="1073000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="28" y="23" width="1280" height="719" extended-state="0" />
+    <frame x="28" y="24" width="1280" height="719" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" />

@@ -75,7 +75,7 @@ public class StudentController {
         Optional studentC=dbUtils.findById(id);
         System.out.println("StudengC:"+studentC);
         if(studentC.isPresent()){
-            StudentForm student=studentC.get();
+            StudentForm student=(StudentForm) studentC.get();
             if(age!=-1){
                 student.setAge(age);
             }
@@ -103,7 +103,7 @@ public class StudentController {
     public String deleteById(@RequestParam(value = "id") Integer id){
         Optional studentC=dbUtils.findById(id);
         if(studentC.isPresent()){
-            StudentForm student=studentC.get();
+            StudentForm student=(StudentForm) studentC.get();
             dbUtils.deleteById(id);
             return "{'msg':'删除成功','object':'"+student.toString()+"'}";
         }
