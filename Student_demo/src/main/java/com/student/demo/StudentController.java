@@ -73,6 +73,7 @@ public class StudentController {
                                         @RequestParam(value = "password",required = false,defaultValue = "null") String password,
                                         @RequestParam(value = "account",required = false,defaultValue = "null") String account){
         Optional studentC=dbUtils.findById(id);
+        System.out.println("StudengC:"+studentC);
         if(studentC.isPresent()){
             StudentForm student=studentC.get();
             if(age!=-1){
