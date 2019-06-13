@@ -2,6 +2,8 @@ package com.ld.springboot_rest;
 
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
 public class EmployeeDAO {
     private static Employees list = new Employees();
@@ -16,8 +18,11 @@ public class EmployeeDAO {
                 "Kameron", "titanic@gmail.com"));
     }
 
+    List<Employee> findByEmail(String email);
+
     public Employees getAllEmployees()
     {
+        List<Employee> findByEmail(String email);
         return list;
     }
 
