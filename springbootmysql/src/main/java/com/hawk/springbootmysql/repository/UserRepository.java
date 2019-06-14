@@ -11,7 +11,7 @@ import java.util.List;
  * Created by Liu.DA on 2019/6/13
  */
 @Repository
-public interface UserRepository extends JpaRepository {
+public interface UserRepository extends JpaRepository <User,Long>{
     User findByNameLike(String name);
     User readByName(String name);
     List<User> getByCreatedateLessThan(Date star);

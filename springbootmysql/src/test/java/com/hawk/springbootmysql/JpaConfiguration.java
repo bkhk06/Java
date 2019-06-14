@@ -19,7 +19,7 @@ import java.util.Properties;
  * Created by Liu.DA on 2019/6/13
  */
 @Configuration
-@EnableJpaRepositories(basePackages = "com.**.repository")
+@EnableJpaRepositories(basePackages = "com.hawk.springbootmysql.repository")
 public class JpaConfiguration {
     @Bean
     PersistenceExceptionTranslationPostProcessor persistenceExceptionTranslationPostProcessor(){
@@ -41,7 +41,7 @@ public class JpaConfiguration {
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
         LocalContainerEntityManagerFactoryBean entityManagerFactoryBean = new LocalContainerEntityManagerFactoryBean();
         entityManagerFactoryBean.setDataSource(dataSource());
-        entityManagerFactoryBean.setPackagesToScan("dbdemo.mysql.entity");
+        entityManagerFactoryBean.setPackagesToScan("com.hawk.springbootmysql.entity");
         entityManagerFactoryBean.setJpaProperties(buildHibernateProperties());
         entityManagerFactoryBean.setJpaVendorAdapter(new HibernateJpaVendorAdapter() {{
             setDatabase(Database.MYSQL);
