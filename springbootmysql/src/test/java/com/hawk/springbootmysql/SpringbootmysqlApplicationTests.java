@@ -43,7 +43,7 @@ public class SpringbootmysqlApplicationTests {
         departmentRepository.deleteAll();
 
         Department department = new Department();
-        department.setName("开发部");
+        department.setName("dev");
         departmentRepository.save(department);
         Assert.assertNotNull(department.getId());
 
@@ -71,7 +71,8 @@ public class SpringbootmysqlApplicationTests {
         Page<User> page = userRepository.findAll(pageable);
         Assert.assertNotNull(page);
         for(User user : page.getContent()) {
-            logger.info("====user==== user name:{}, department name:{}, role name:{}");           ;
+            logger.info("====user==== user name:{}, department name:{}, role name:{}",
+                    user.getName(),user.getDepartment().getName(),user.getRoles().get(0).getName());           ;
         }
     }
 
