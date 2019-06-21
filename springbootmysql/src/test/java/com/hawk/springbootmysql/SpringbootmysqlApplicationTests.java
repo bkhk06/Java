@@ -70,9 +70,12 @@ public class SpringbootmysqlApplicationTests {
         Pageable pageable = new PageRequest(0, 10, new Sort(Sort.Direction.ASC, "id"));
         Page<User> page = userRepository.findAll(pageable);
         Assert.assertNotNull(page);
+
         for(User user : page.getContent()) {
+            System.out.println("====user==== user name:{}, department name:{}, role name:{}"+user.getName());
             logger.info("====user==== user name:{}, department name:{}, role name:{}",
-                    user.getName(),user.getDepartment().getName(),user.getRoles().get(0).getName());           ;
+                    user.getName(),user.getDepartment().getName(),user.getRoles().get(0).getName()
+            );
         }
     }
 
