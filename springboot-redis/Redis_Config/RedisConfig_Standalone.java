@@ -59,7 +59,6 @@ public class RedisConfig {
 
     /**
      * JedisPoolConfig 连接池
-     *
      * @return
      */
     @Bean
@@ -83,20 +82,18 @@ public class RedisConfig {
         jedisPoolConfig.setTestWhileIdle(testWhileIdle);
         return jedisPoolConfig;
     }
-
     /**
      * 单机版配置
-     *
-     * @param @param  jedisPoolConfig
+     * @Title: JedisConnectionFactory
+     * @param @param jedisPoolConfig
      * @param @return
      * @return JedisConnectionFactory
-     * @throws
-     * @Title: JedisConnectionFactory
      * @autor lpl
      * @date 2018年2月24日
+     * @throws
      */
     @Bean
-    public JedisConnectionFactory JedisConnectionFactory(JedisPoolConfig jedisPoolConfig) {
+    public JedisConnectionFactory JedisConnectionFactory(JedisPoolConfig jedisPoolConfig){
         JedisConnectionFactory JedisConnectionFactory = new JedisConnectionFactory(jedisPoolConfig);
         //连接池
         JedisConnectionFactory.setPoolConfig(jedisPoolConfig);
@@ -122,7 +119,6 @@ public class RedisConfig {
         initDomainRedisTemplate(redisTemplate, redisConnectionFactory);
         return redisTemplate;
     }
-
     /**
      * 设置数据存入 redis 的序列化方式,并开启事务
      *
@@ -139,15 +135,13 @@ public class RedisConfig {
         redisTemplate.setEnableTransactionSupport(true);
         redisTemplate.setConnectionFactory(factory);
     }
-
     /**
      * 注入封装RedisTemplate
-     *
-     * @return RedisUtil
-     * @throws
      * @Title: redisUtil
+     * @return RedisUtil
      * @autor lpl
      * @date 2017年12月21日
+     * @throws
      */
     @Bean(name = "redisUtil")
     public RedisUtil redisUtil(RedisTemplate<String, Object> redisTemplate) {
@@ -155,4 +149,3 @@ public class RedisConfig {
         redisUtil.setRedisTemplate(redisTemplate);
         return redisUtil;
     }
-}
