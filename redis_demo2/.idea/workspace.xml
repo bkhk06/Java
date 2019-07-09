@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc3d15d0-a11c-4880-bd4e-5fbe5e82983e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../springboot-redis/Redis_Config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-redis/Redis_Config/RedisConfig_Standalone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-redis/Redis_Config/Redis_Config_Cluster.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-redis/Redis_Config/Redis_Config_Sentinel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-redis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-redis/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-redis/src/main/java/org/lpl/demo/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-redis/src/main/java/org/lpl/demo/config/RedisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-redis/src/main/resources/config/redis.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-redis/src/main/resources/config/redis.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-redis/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-redis/target/classes/META-INF/maven/org.lpl/springboot-redis/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-redis/target/classes/META-INF/maven/org.lpl/springboot-redis/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-redis/target/classes/config/redis.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-redis/target/classes/config/redis.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-redis/target/classes/org/lpl/demo/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-redis/target/classes/org/lpl/demo/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-redis/target/classes/org/lpl/demo/bean/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-redis/target/classes/org/lpl/demo/bean/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-redis/target/classes/org/lpl/demo/config/RedisConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-redis/target/classes/org/lpl/demo/config/RedisConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-redis/target/classes/org/lpl/demo/utils/RedisUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-redis/target/classes/org/lpl/demo/utils/RedisUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-redis/target/test-classes/org/lpl/demo/test/RedisTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-redis/target/test-classes/org/lpl/demo/test/RedisTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../redis_demo3/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/../redis_demo3/mvnw" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,14 +52,31 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
-      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="redis_demo2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redis_demo2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redis_demo2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redis_demo2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../redis_demo3" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
@@ -118,17 +120,17 @@
       <updated>1561544775174</updated>
       <workItem from="1561544779413" duration="709000" />
       <workItem from="1561545518860" duration="96000" />
+      <workItem from="1561545680883" duration="634000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="805000" />
+    <option name="totallyTimeSpent" value="1439000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2148" height="1175" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2521531" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25454545" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
