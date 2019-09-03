@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="file://C:/Users/Liu-Da/eclipse-workspace/MQ_TEST/lib/activemq-broker-5.10.2.jar" />
+    <libelement value="file://C:/Users/Liu-Da/eclipse-workspace/MQ_TEST/lib/activemq-client-5.10.2.jar" />
+    <libelement value="file://C:/Users/Liu-Da/eclipse-workspace/MQ_TEST/lib/activemq-console-5.10.2.jar" />
+    <libelement value="file://C:/Users/Liu-Da/eclipse-workspace/MQ_TEST/lib/activemq-jaas-5.10.2.jar" />
+    <libelement value="file://C:/Users/Liu-Da/eclipse-workspace/MQ_TEST/lib/activemq-kahadb-store-5.10.2.jar" />
+    <libelement value="file://C:/Users/Liu-Da/eclipse-workspace/MQ_TEST/lib/activemq-openwire-legacy-5.10.2.jar" />
+    <libelement value="file://C:/Users/Liu-Da/eclipse-workspace/MQ_TEST/lib/activemq-protobuf-1.1.jar" />
+    <libelement value="file://C:/Users/Liu-Da/eclipse-workspace/MQ_TEST/lib/activemq-spring-5.10.2.jar" />
+    <libelement value="file://C:/Users/Liu-Da/eclipse-workspace/MQ_TEST/lib/activemq-web-5.10.2.jar" />
+    <libelement value="file://C:/Users/Liu-Da/eclipse-workspace/MQ_TEST/lib/geronimo-j2ee-management_1.1_spec-1.0.1.jar" />
+    <libelement value="file://C:/Users/Liu-Da/eclipse-workspace/MQ_TEST/lib/geronimo-jms_1.1_spec-1.1.1.jar" />
+    <libelement value="file://C:/Users/Liu-Da/eclipse-workspace/MQ_TEST/lib/geronimo-jta_1.0.1B_spec-1.0.1.jar" />
+    <libelement value="file://C:/Users/Liu-Da/eclipse-workspace/MQ_TEST/lib/hawtbuf-1.10.jar" />
+    <libelement value="file://C:/Users/Liu-Da/eclipse-workspace/MQ_TEST/lib/insight-log4j-7.2.0.redhat-024-patched.jar" />
+    <libelement value="file://C:/Users/Liu-Da/eclipse-workspace/MQ_TEST/lib/insight-log-core-7.2.0.redhat-024.jar" />
+    <libelement value="file://C:/Users/Liu-Da/eclipse-workspace/MQ_TEST/lib/jcl-over-slf4j-1.7.5.jar" />
+    <libelement value="file://C:/Users/Liu-Da/eclipse-workspace/MQ_TEST/lib/ojdbc6-11.2.0.1.0.jar" />
+    <libelement value="jar://$MODULE_DIR$/lib/slf4j-api-1.7.5.jar!/" />
+    <src_description expected_position="0">
+      <src_folder value="file://$MODULE_DIR$/src" expected_position="0" />
+    </src_description>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/bin" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="jdk" jdkName="JavaSE-1.8" jdkType="JavaSDK" />
+    <orderEntry type="module-library">
+      <library name="activemq-broker-5.10.2.jar">
+        <CLASSES>
+          <root url="file://C:/Users/Liu-Da/eclipse-workspace/MQ_TEST/lib/activemq-broker-5.10.2.jar" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="activemq-client-5.10.2.jar">
+        <CLASSES>
+          <root url="file://C:/Users/Liu-Da/eclipse-workspace/MQ_TEST/lib/activemq-client-5.10.2.jar" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="activemq-console-5.10.2.jar">
+        <CLASSES>
+          <root url="file://C:/Users/Liu-Da/eclipse-workspace/MQ_TEST/lib/activemq-console-5.10.2.jar" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="activemq-jaas-5.10.2.jar">
+        <CLASSES>
+          <root url="file://C:/Users/Liu-Da/eclipse-workspace/MQ_TEST/lib/activemq-jaas-5.10.2.jar" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="activemq-kahadb-store-5.10.2.jar">
+        <CLASSES>
+          <root url="file://C:/Users/Liu-Da/eclipse-workspace/MQ_TEST/lib/activemq-kahadb-store-5.10.2.jar" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="activemq-openwire-legacy-5.10.2.jar">
+        <CLASSES>
+          <root url="file://C:/Users/Liu-Da/eclipse-workspace/MQ_TEST/lib/activemq-openwire-legacy-5.10.2.jar" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="activemq-protobuf-1.1.jar">
+        <CLASSES>
+          <root url="file://C:/Users/Liu-Da/eclipse-workspace/MQ_TEST/lib/activemq-protobuf-1.1.jar" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="activemq-spring-5.10.2.jar">
+        <CLASSES>
+          <root url="file://C:/Users/Liu-Da/eclipse-workspace/MQ_TEST/lib/activemq-spring-5.10.2.jar" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="activemq-web-5.10.2.jar">
+        <CLASSES>
+          <root url="file://C:/Users/Liu-Da/eclipse-workspace/MQ_TEST/lib/activemq-web-5.10.2.jar" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="geronimo-j2ee-management_1.1_spec-1.0.1.jar">
+        <CLASSES>
+          <root url="file://C:/Users/Liu-Da/eclipse-workspace/MQ_TEST/lib/geronimo-j2ee-management_1.1_spec-1.0.1.jar" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="geronimo-jms_1.1_spec-1.1.1.jar">
+        <CLASSES>
+          <root url="file://C:/Users/Liu-Da/eclipse-workspace/MQ_TEST/lib/geronimo-jms_1.1_spec-1.1.1.jar" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="geronimo-jta_1.0.1B_spec-1.0.1.jar">
+        <CLASSES>
+          <root url="file://C:/Users/Liu-Da/eclipse-workspace/MQ_TEST/lib/geronimo-jta_1.0.1B_spec-1.0.1.jar" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hawtbuf-1.10.jar">
+        <CLASSES>
+          <root url="file://C:/Users/Liu-Da/eclipse-workspace/MQ_TEST/lib/hawtbuf-1.10.jar" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="insight-log4j-7.2.0.redhat-024-patched.jar">
+        <CLASSES>
+          <root url="file://C:/Users/Liu-Da/eclipse-workspace/MQ_TEST/lib/insight-log4j-7.2.0.redhat-024-patched.jar" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="insight-log-core-7.2.0.redhat-024.jar">
+        <CLASSES>
+          <root url="file://C:/Users/Liu-Da/eclipse-workspace/MQ_TEST/lib/insight-log-core-7.2.0.redhat-024.jar" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jcl-over-slf4j-1.7.5.jar">
+        <CLASSES>
+          <root url="file://C:/Users/Liu-Da/eclipse-workspace/MQ_TEST/lib/jcl-over-slf4j-1.7.5.jar" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="ojdbc6-11.2.0.1.0.jar">
+        <CLASSES>
+          <root url="file://C:/Users/Liu-Da/eclipse-workspace/MQ_TEST/lib/ojdbc6-11.2.0.1.0.jar" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="slf4j-api-1.7.5.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/slf4j-api-1.7.5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>
