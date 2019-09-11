@@ -10,6 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.sql.DataSource;
 import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.stream.Stream;
 
 import static java.lang.System.exit;
@@ -60,14 +61,14 @@ public class Application implements CommandLineRunner {
             stream.forEach(x -> System.out.println(x));
         }
 
-        //System.out.println("....................");
-        //SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        //Date from = sdf.parse("2017-02-15");
-        //Date to = sdf.parse("2017-02-17");
+        /*System.out.println("....................");
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        Date from = sdf.parse("2017-02-15");
+        Date to = sdf.parse("2017-02-17");
 
-        //for (Customer customer : customerRepository.findByDateBetween(from, to)) {
-        //    System.out.println(customer);
-        //}
+        for (Customer customer : customerRepository.findByDateBetween(from, to)) {
+            System.out.println(customer);
+        }*/
 
         System.out.println("Done!");
 
