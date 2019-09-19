@@ -1,15 +1,15 @@
-package com.adcc.activemqdemo5;
+package com.adcc.consumer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.jms.annotation.EnableJms;
 
 @SpringBootApplication
-@EnableJms//start JMS class
-public class Activemqdemo5Application {
+@EnableJms
+public class ConsumerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Activemqdemo5Application.class, args);
+        SpringApplication.run(ConsumerApplication.class, args);
     }
 
 }
