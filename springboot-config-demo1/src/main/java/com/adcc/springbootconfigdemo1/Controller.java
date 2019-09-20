@@ -14,7 +14,7 @@ public class Controller {
     @RequestMapping("/salary")
     public String getSalary(){
         System.err.println("Salary is: "+salary);
-        return salary;
+        return "Salary is: "+ salary;
     }
 
     @Value("${content}")

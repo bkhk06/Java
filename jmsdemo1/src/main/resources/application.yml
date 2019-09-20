@@ -2,8 +2,10 @@ server:
   port: 9090
 spring:
   activemq:
-    broker-url: tcp://127.0.0.1:61616
+    broker-url: failover:(tcp://192.168.11.101:61616,tcp://192.168.11.102:61616)
     user:
     password:
   jms:
-    pub-sub-domain: true #启用发布订阅模式（默认关闭是点对点模式）
+    pub-sub-domain: false #启用发布订阅模式（默认关闭是点对点模式）
+queueName: ActiveMQ-Test_Queue
+topicName: ActiveMQ-Test_Topic

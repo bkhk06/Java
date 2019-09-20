@@ -14,11 +14,11 @@ import javax.jms.ConnectionFactory;
 @Configuration
 public class JMSConfig {
 
-   /* @Bean
+    @Bean
     public JmsListenerContainerFactory<?> topicListenerContainerFactory(ConnectionFactory connectionFactory){
         DefaultJmsListenerContainerFactory factory = new DefaultJmsListenerContainerFactory();
         factory.setPubSubDomain(true);
         factory.setConnectionFactory(connectionFactory);
         return factory;
-    }*/
+    }
 }
