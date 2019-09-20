@@ -18,7 +18,7 @@ public class MsgController {
         this.jmsTemplate = jmsTemplate;
     }
 
-    @GetMapping("/send")
+    @GetMapping("/sendQueue")
     public String sendMsg(String msg){
         jmsTemplate.convertAndSend("queue.test",msg);
         //jmsTemplate.convertAndSend(new ActiveMQQueue("queue.test"),msg);

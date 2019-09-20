@@ -1,0 +1,5 @@
+server:
+  port: 8909
+salary: 1000
+title: PE
+content: "salary: ${salary},title: ${title}"

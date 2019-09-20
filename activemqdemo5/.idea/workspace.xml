@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78f53233-e5ce-4f79-9742-6ae722a5b41e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../jmsdemo1/src/main/java/com/adcc/jmsdemo1/ConsumerListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jmsdemo1/src/main/java/com/adcc/jmsdemo1/JMSConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jmsdemo1/src/main/java/com/adcc/jmsdemo1/MsgController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jmsdemo1/src/main/java/com/adcc/jmsdemo1/TopicSub.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jmsdemo1/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-config-demo1/src/main/java/com/adcc/springbootconfigdemo1/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-config-demo1/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jmsdemo1/src/main/java/com/adcc/jmsdemo1/MsgController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jmsdemo1/src/main/java/com/adcc/jmsdemo1/MsgController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
