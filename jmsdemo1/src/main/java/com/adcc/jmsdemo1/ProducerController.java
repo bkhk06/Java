@@ -27,6 +27,7 @@ public class ProducerController {
         //jmsTemplate.convertAndSend(queueName,msg);
         // 这么写的话，即便启用pub-sub模式，不需要增加额外配置JmsListenerContainerFactory，也可以实现Topic和Queue共存。
         jmsTemplate.convertAndSend(new ActiveMQQueue(queueName),msg);
+        System.out.println("ActiveMQQueue sent message in success!");
         return "SUCCESS";
     }
 
@@ -36,6 +37,7 @@ public class ProducerController {
     @GetMapping("/sendTopic")
     public String sendTopic(String msg) {
         jmsTemplate.convertAndSend(new ActiveMQTopic(topicName), msg);
+        System.out.println("ActiveMQTopic sent message in success!");
         return "SUCCESS";
     }
 }
