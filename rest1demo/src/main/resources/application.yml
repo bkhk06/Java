@@ -2,18 +2,17 @@ server:
   port: 9097
 spring:
   datasource:
-    url: jdbc:mysql://192.168.11.101:3308/restdemo
-    data-username: root
-    data-password: adccadcc
-    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.11.101:3308/restdemo?characterEncoding=utf8
+    #url: jdbc:mysql://127.0.0.1:3306/bookjpa?characterEncoding=utf8
+    username: root
+    password: adccadcc
   jpa:
-    database: mysql
-    #查询时是否显示日志
+    database: MYSQL
     show-sql: true
+    #Hibernate ddl auto (validate|create|create-drop|update)....
     hibernate:
       ddl-auto: update
-      naming-strategy: spring.jpa.hibernate.naming-strategy = org.hibernate.cfg.ImprovedNamingStrategy
-
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5Dialect
