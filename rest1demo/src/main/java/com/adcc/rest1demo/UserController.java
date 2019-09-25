@@ -22,6 +22,13 @@ public class UserController {
         return resultMsg;
     }
 
+    @RequestMapping("getalluser")
+    public Object getAllUser(){
+        Iterable<UserInfo> userEntity = userInfoRepository.findAll();
+        ResultMsg resultMsg = new ResultMsg(ResultStatusCode.OK.getErrcode(), ResultStatusCode.OK.getErrmsg(), userEntity);
+        return resultMsg;
+    }
+
     @Modifying
     @RequestMapping("adduser")
     public Object addUser(@RequestBody UserInfo userEntity){
@@ -52,5 +59,4 @@ public class UserController {
         ResultMsg resultMsg = new ResultMsg(ResultStatusCode.OK.getErrcode(), ResultStatusCode.OK.getErrmsg(), null);
         return resultMsg;
     }
-
 }
