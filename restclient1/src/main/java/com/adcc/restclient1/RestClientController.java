@@ -9,5 +9,5 @@ public class RestClientController {
     @Value("$rest-api")
     private static String REST_API;
 
-    
+
 }
