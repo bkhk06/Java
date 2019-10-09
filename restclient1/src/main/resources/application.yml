@@ -1,3 +1,0 @@
-server:
-  port: 9098
-rest-api: 192.168.11.101:9097/user
