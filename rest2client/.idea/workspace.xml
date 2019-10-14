@@ -2,23 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1ef2b56-90f0-4323-bf1c-d30dbc587af8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../FME_msg_test_DEP/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FME_msg_test_DEP/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FME_msg_test_DEP/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FME_msg_test_DEP/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FME_msg_test_DEP/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FME_msg_test_DEP/FME_msg_test_DEP.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest2client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rest2client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../restclient1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../restclient1/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../restclient1/src/main/java/com/adcc/restclient1/RestClientController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../restclient1/src/main/java/com/adcc/restclient1/Restclient1Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../restclient1/src/main/java/com/adcc/restclient1/Restclient1Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../restclient1/src/main/resources/application.yml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../accessingdatarest/src/main/java/com/example/accessingdatarest/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FME_msg_test_DEP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FME_msg_test_DEP/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jmsdemo1/src/main/java/com/adcc/jmsdemo1/ProducerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jmsdemo1/src/main/java/com/adcc/jmsdemo1/ProducerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jmsdemo1/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../jmsdemo1/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../redis_demo3/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../redis_demo3/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rest2client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest2client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rest2client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rest2client.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,7 +24,7 @@
     <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -46,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/rest2client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="37" column="24" lean-forward="true" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+            <state relative-caret-position="231">
+              <caret line="28" column="35" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,7 +73,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="692" />
     <option name="y" value="129" />
     <option name="width" value="1440" />
@@ -94,7 +85,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -112,6 +102,13 @@
               <item name="rest2client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rest2client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rest2client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rest2client" type="b2602c69:ProjectViewProjectNode" />
@@ -141,6 +138,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -197,30 +195,27 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570600050385</updated>
-      <workItem from="1570600053553" duration="1436000" />
+      <workItem from="1570600053553" duration="2681000" />
+      <workItem from="1570846663640" duration="727000" />
+      <workItem from="1571033683465" duration="599000" />
+      <workItem from="1571037020354" duration="597000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1436000" />
+    <option name="totallyTimeSpent" value="4604000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="692" y="129" width="1440" height="780" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="Capture Tool" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18390192" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13488035" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Docker" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.329718" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.329718" />
@@ -228,17 +223,23 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Jms Messenger" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.329718" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="SciView" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Jms Messenger" order="10" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,8 +255,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rest2client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="37" column="24" lean-forward="true" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+        <state relative-caret-position="231">
+          <caret line="28" column="35" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -1,5 +1,7 @@
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
+import javax.ws.rs.client.Entity;
+import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.io.IOException;
 
@@ -11,37 +13,35 @@ public class rest2client {
         private static String REST_API="http://192.168.11.101:9097/user";
 
         public static void main(String[] args) throws IOException {
-            getRandomResource();
-            //addResource();
-            getAllResource();
+            getUser();
+            //addUser();
+            getAllUsers();
         }
 
-        public static void getRandomResource() throws IOException {
+        public static void getUser() throws IOException {
             Client client = ClientBuilder.newClient();
             client.property("Content-Type","xml");
-            Response response = client.target(REST_API + "/getuser?id=4").request().get();
+            Response response = client.target(REST_API + "/getuser?id=8").request().get();
             String str = response.readEntity(String.class);
-            System.out.print("getRandomResource result is : " + str + "\n");
+            System.out.print("getUser result is : " + str + "\n");
         }
 
-        public static void addResource() {
+        /*public static void addUser(String name,String password,String salt, String role) {
             Client client = ClientBuilder.newClient();
-            //PersonEntity entity = new PersonEntity("NO2", "Joker", "http://");
-            //Response response = client.target(REST_API + "/addResource/person").request().buildPost(Entity.entity(entity, MediaType.APPLICATION_JSON)).invoke();
-            //String str  = response.readEntity(String.class);
-            //System.out.print("addResource result is : " + str + "\n");
-        }
+            client.property("Content-Type","xml");
 
-        public static void getAllResource() throws IOException {
+            PersonEntity entity = new PersonEntity("NO2", "Joker", "http://");
+            Response response = client.target(REST_API + "/addUser/person").request().buildPost(Entity.entity(entity, MediaType.APPLICATION_JSON)).invoke();
+            String str  = response.readEntity(String.class);
+            System.out.print("addUser result is : " + str + "\n");
+        }*/
+
+        public static void getAllUsers() throws IOException {
             Client client = ClientBuilder.newClient();
             client.property("Content-Type","xml");
             Response response = client.target(REST_API + "/getalluser").request().get();
             String str = response.readEntity(String.class);
-            System.out.print("getAllResource result is : " + str + "\n");
+            System.out.print("getAllUsers result is : " + str + "\n");
 
         }
-
-
-
-
 }

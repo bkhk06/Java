@@ -1,5 +1,5 @@
 server:
-  port: 9190
+  port: 9290
 spring:
   activemq:
     broker-url: failover:(tcp://192.168.11.101:61616,tcp://192.168.11.102:61616)
@@ -7,5 +7,5 @@ spring:
     password:
   jms:
     pub-sub-domain: false #启用发布订阅模式（默认关闭是点对点模式）
-queueName: ActiveMQ-Test_Queue_P_C
-topicName: ActiveMQ-Test_Topic_P_C
+queueName: ActiveMQ-Test_Queue_P
+topicName: ActiveMQ-Test_Topic_P
