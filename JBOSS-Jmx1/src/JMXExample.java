@@ -8,10 +8,11 @@ public class JMXExample {
  
     public static void main(String[] args) throws Exception {
         //Get a connection to the JBoss AS MBean server on localhost
-        String host = "192.168.11.68";
-        int port = 2099;
+        String host = "192.168.11.101";
+        int port = 1090;
         String urlString = System.getProperty("jmx.service.url", 
-            "service:jmx:rmi:///jndi/rmi://" + host + ":" + port + "/jmxrmi");
+            //"service:jmx:rmi:///jndi/rmi://" + host + ":" + port + "/jmxrmi");
+        	"service:jmx:rmi://"+host + "/jndi/rmi://"+host+":"+port+"/jmxconnector");
         JMXServiceURL serviceURL = new JMXServiceURL(urlString);
         JMXConnector jmxConnector = JMXConnectorFactory.connect(serviceURL, null);
         MBeanServerConnection connection = jmxConnector.getMBeanServerConnection();
@@ -19,7 +20,7 @@ public class JMXExample {
         //Invoke on the JBoss AS MBean server
         int count = connection.getMBeanCount();
         System.out.println(count);
-    }
+       }
 }
 
 
