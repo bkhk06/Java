@@ -9,3 +9,4 @@ spring:
     pub-sub-domain: false #启用发布订阅模式（默认关闭是点对点模式）
 queueName: ActiveMQ-Test_Queue_P_C
 topicName: ActiveMQ-Test_Topic_P_C
+
