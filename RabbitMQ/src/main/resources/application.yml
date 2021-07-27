@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: RabbitmqApplication
+  rabbitmq:
+    host: 192.168.11.101
+    port: 5672
+    username: admin
+    password: adcc
+    #发布确认
+    #publisher-confirms: true
+    virtual-host: /
+    publisher-confirm-type: correlated
