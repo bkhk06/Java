@@ -17,12 +17,14 @@ public class ActivemqproducerApplicationTests {
     private Producer producer;
 
     @Test
-    public void contextLoads() {
+    public void contextLoads() throws InterruptedException {
    //新建Queue:Firstqueue
         Destination destination=new ActiveMQQueue("Firstqueue");
 
-        for(int i=0; i<500; i++){
+        for(int i=0; i<5000; i++){
             producer.sendMessage(destination, "生产者发送了消息"+i);
+            System.out.println("生产者发送了消息"+i);
+            Thread.sleep(30000);
         }
 
 
