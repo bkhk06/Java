@@ -1,6 +1,7 @@
 package com.adcc.activemqproducer;
 
 import org.apache.activemq.command.ActiveMQQueue;
+import org.apache.activemq.command.ActiveMQTopic;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,12 +19,16 @@ public class ActivemqproducerApplicationTests {
 
     @Test
     public void contextLoads() throws InterruptedException {
-   //新建Queue:Firstqueue
-        Destination destination=new ActiveMQQueue("Firstqueue");
+        //创建测试Queue和Topic
+        Destination queue_test=new ActiveMQQueue("QueueTest");
+        Destination topic_test=new ActiveMQTopic("TopicTest");
+
 
         for(int i=0; i<5000; i++){
-            producer.sendMessage(destination, "生产者发送了消息"+i);
-            System.out.println("生产者发送了消息"+i);
+            producer.sendMessage(queue_test, "生产者发送了Queue消息"+i);
+            System.out.println("生产者发送了Queue消息"+i);
+            producer.sendMessage(topic_test,"生产者发送了Topic消息"+i);
+            System.out.println("生产者发送了Topic消息"+i);
             Thread.sleep(30000);
         }
 
