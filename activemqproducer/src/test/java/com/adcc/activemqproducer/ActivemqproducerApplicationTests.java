@@ -23,10 +23,10 @@ public class ActivemqproducerApplicationTests {
     private Producer producer;
 
     @Value("${queueMsg}")
-    private String queueMsg;
+    private String queueMsg=new String("utf-8");
 
     @Value("${topicMsg}")
-    private String topicMsg;
+    private String topicMsg=new String("utf-8");
 
     @Value("${queueName}")
     private  String queueName;
