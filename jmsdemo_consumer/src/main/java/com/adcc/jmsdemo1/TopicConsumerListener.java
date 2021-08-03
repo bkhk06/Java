@@ -10,32 +10,41 @@ import org.springframework.stereotype.Component;
 @Component
 public class TopicConsumerListener {
     @Value("${topicName}")
-    private static String topicName;
+    private static String topicName1;
+
+    @Value("${topicName}")
+    private static String topicName2;
+
+    @Value("${topicName}")
+    private static String topicName3;
+
+    @Value("${topicName}")
+    private static String topicName4;
     
-    @JmsListener(destination ="${topicName}",containerFactory = "topicListenerContainerFactory")
+    @JmsListener(destination ="${topicName1}",containerFactory = "topicListenerContainerFactory")
     /*,containerFactory = "topicListenerContainerFactory"*/
     public void receieve1(String msg){
-        System.err.println("Topic.Subscribe.receive1接收消息："+msg);
+        System.out.println("Topic.Subscribe.receive1接收消息："+msg);
     }
 
-    @JmsListener(destination ="${topicName}",containerFactory = "topicListenerContainerFactory")
+    @JmsListener(destination ="${topicName2}",containerFactory = "topicListenerContainerFactory")
     /*,containerFactory = "topicListenerContainerFactory"*/
     public void receieve2(String msg){
-        System.err.println("Topic.Subscribe.receive2接收消息："+msg);
+        System.out.println("Topic.Subscribe.receive2接收消息："+msg);
     }
 
     //@JmsListener(destination = topicName/*,containerFactory = "topicListenerContainerFactory"*/)
     /*,containerFactory = "topicListenerContainerFactory"*/
-    @JmsListener(destination ="${topicName}",containerFactory = "topicListenerContainerFactory")
+    @JmsListener(destination ="${topicName3}",containerFactory = "topicListenerContainerFactory")
     /*,containerFactory = "topicListenerContainerFactory"*/
     public void receieve3(String msg){
-        System.err.println("Topic.Subscribe.receive3接收消息："+msg);
+        System.out.println("Topic.Subscribe.receive3接收消息："+msg);
     }
 
     //@JmsListener(destination = topicName/*,containerFactory = "topicListenerContainerFactory"*/)
     /*,containerFactory = "topicListenerContainerFactory"*/
-    @JmsListener(destination ="${topicName}",containerFactory = "topicListenerContainerFactory")
+    @JmsListener(destination ="${topicName4}",containerFactory = "topicListenerContainerFactory")
     public void receieve4(String msg){
-        System.err.println("Topic.Subscribe.receive4接收消息："+msg);
+        System.out.println("Topic.Subscribe.receive4接收消息："+msg);
     }
 }
