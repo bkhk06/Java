@@ -7,17 +7,20 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import javax.jms.Destination;
+import javax.jms.JMSException;
+import javax.jms.TextMessage;
 
 @Component
 public class Consumer {
-    // 使用JmsListener配置消费者监听的队列，其中text是接收到的消息
-    @JmsListener(destination = "${queueName}")
-    public void receiveQueue(String msg){
-        //System.err.println("Queue Consumer received messages: "+msg);
-        System.out.println("Consumer收到的报文为:"+msg);
-        System.out.println("=================");
+
+    @JmsListener(destination = "${queueName}" ,containerFactory="queueListenerFactory")// 增加对应处理的监听器工程
+    public void receiveQueue(TextMessage text) throws Exception {
+        System.out.println(Thread.currentThread().getName()+":Consumer收到的Queue报文为:"+text.getText());
     }
 
-    @JmsListener(destination = )
-    public void
+    @JmsListener(destination="${topicName}", containerFactory="topicListenerFactory")// 增加对应处理的监听器工程
+    public void receiveTopic(TextMessage text) throws JMSException{
+        System.out.println(Thread.currentThread().getName()+":Consumer收到的Topic报文为:"+text.getText());
+    }
+
 }
