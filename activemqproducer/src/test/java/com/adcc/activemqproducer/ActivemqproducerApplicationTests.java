@@ -46,9 +46,12 @@ public class ActivemqproducerApplicationTests {
         for(int i=1; i<5000; i++){
             System.out.println(i+"生产者发送了Flight Queue消息"+queueMsg);
             producer.sendMessage(queue_test, queueMsg);
+
+            Thread.sleep(3000);
             System.out.println(i+"生产者发送了Flow Control Queue消息"+topicMsg);
             producer.sendMessage(queue_test, topicMsg);
 
+            Thread.sleep(3000);
             System.out.println(i+"生产者发送了Topic消息"+topicMsg);
             producer.sendMessage(topic_test,topicMsg);
             //
