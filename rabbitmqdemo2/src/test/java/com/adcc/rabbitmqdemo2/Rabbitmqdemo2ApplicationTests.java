@@ -1,13 +1,48 @@
 package com.adcc.rabbitmqdemo2;
 
 import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
-@SpringBootTest
-class Rabbitmqdemo2ApplicationTests {
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.UUID;
+
+@RunWith(SpringRunner.class)
+@SpringBootTest(classes=Rabbitmqdemo2Application.class)
+public class Rabbitmqdemo2ApplicationTests {
+
+    @Autowired
+    RabbitTemplate rabbitTemplate;  //使用RabbitTemplate,这提供了接收/发送等等方法
+
+    @Value("${intervalTime}")
+    private int intervalTime;
 
     @Test
-    void contextLoads() {
+    void contextLoads() throws InterruptedException {
+        //创建测试Queue和Topic
+
+
+        for(int i=1; i<5000; i++){
+            String messageId = String.valueOf(UUID.randomUUID());
+            String messageData = "test message, hello!";
+            String createTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+            Map<String,Object> map=new HashMap<>();
+            map.put("messageId",messageId);
+            map.put("messageData",messageData);
+            map.put("createTime",createTime);
+            //将消息携带绑定键值：TestDirectRouting 发送到交换机TestDirectExchange
+            System.out.println(">>>>>>>>Messages are sent: "+map);
+            rabbitTemplate.convertAndSend("TestDirectExchange", "TestDirectRouting", map);
+            Thread.sleep(intervalTime);
+        }
+
     }
 
 }
