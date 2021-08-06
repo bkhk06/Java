@@ -1,10 +1,10 @@
-package com.adcc.rabbitmqcon1;
+package com.adcc.rabbitmqdemo2;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Rabbitmqcon1ApplicationTests {
+class Rabbitmqdemo2ApplicationTests {
 
     @Test
     void contextLoads() {
