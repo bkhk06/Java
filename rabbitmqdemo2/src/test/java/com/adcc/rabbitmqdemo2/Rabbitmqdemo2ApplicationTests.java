@@ -29,9 +29,7 @@ public class Rabbitmqdemo2ApplicationTests {
 
     @Test
     void contextLoads() throws InterruptedException {
-        //创建测试Queue和Topic
-
-
+        //创建测试
         for(int i=1; i<500000; i++){
             String messageId = String.valueOf(UUID.randomUUID());
             //String messageData = "test message, hello!";
@@ -45,7 +43,6 @@ public class Rabbitmqdemo2ApplicationTests {
             rabbitTemplate.convertAndSend("TestDirectExchange", "TestDirectRouting", map);
             Thread.sleep(intervalTime);
         }
-
     }
 
 }
