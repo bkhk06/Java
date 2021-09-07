@@ -51,6 +51,8 @@ public class SendMessageController {
         manMap.put("messageData", messageData1);
         manMap.put("createTime", createTime);
         rabbitTemplate.convertAndSend("topicExchange", "topic.man", manMap);
+        System.out.println("++++ "+" ======>>>>>>>>topicExchange1 Messages are sent: "+manMap);
+
         return "ok";
     }
 
@@ -64,6 +66,7 @@ public class SendMessageController {
         womanMap.put("messageData", messageData2);
         womanMap.put("createTime", createTime);
         rabbitTemplate.convertAndSend("topicExchange", "topic.woman", womanMap);
+        System.out.println("++++ "+" ======>>>>>>>>topicExchange2 Messages are sent: "+womanMap);
         return "ok";
     }
 }

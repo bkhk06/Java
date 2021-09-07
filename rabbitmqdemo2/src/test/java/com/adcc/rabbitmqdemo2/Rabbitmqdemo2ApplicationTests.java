@@ -40,7 +40,7 @@ public class Rabbitmqdemo2ApplicationTests {
             map.put("createTime",createTime);
             //将消息携带绑定键值：TestDirectRouting 发送到交换机TestDirectExchange
             System.out.println("++++ "+i+" ======>>>>>>>>Messages are sent: "+map);
-            rabbitTemplate.convertAndSend("TestDirectExchange", "TestDirectRouting", map);
+            rabbitTemplate.convertAndSend("topicExchangeAdcc", "topicExchangeAdcc", map);
             Thread.sleep(intervalTime);
         }
     }
