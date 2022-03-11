@@ -1,4 +1,4 @@
-package com.adcc.mongo;
+package cn.adcc.mongorepository;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
