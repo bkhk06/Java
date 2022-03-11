@@ -50,4 +50,8 @@ public class Student implements Serializable {
     public void setStudentBirthday(Date date) {
         studentBirthday=date;
     }
+
+    public String getStudentInfo() {
+        return studentName+"_ "+studentId+" _"+studentAge+"_ "+studentScore;
+    }
 }

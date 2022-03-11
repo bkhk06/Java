@@ -13,16 +13,20 @@ class MongodbTestApplicationTests {
     private StudentDaoTypeOne studentDaoTypeOne;
 
     @Test
-    void addOneStudent(){
+    void addOneStudent() throws InterruptedException {
 //        插入10行
-        for (Integer count = 0; count < 10; count++) {
+        for (Integer count = 0; count < 1000000; count++) {
+            int randomNum= (int) Math.random ();
             Student student = new Student();
-            student.setStudentId("student_"+count) ;//如果自己不去设置id则系统会分配给一个id
+            //student.setStudentId("student_"+(count+randomNum)) ;//如果自己不去设置id则系统会分配给一个id
             student.setStudentName("Godfery"+count);
             student.setStudentAge(count);
             student.setStudentScore(98.5-count);
             student.setStudentBirthday(new Date());
             studentDaoTypeOne.save(student);
+            Thread.sleep(1000);
+            System.out.println("NO."+count+": "+student.getStudentInfo());
+
         }
     }
 
