@@ -1,0 +1,8 @@
+http://127.0.0.1:9883/repository/add
+[{"key":"notifyType","value":"LD0002","description":""}]
+[{"key":"notifyNo","value":"ADCC098765288","description":""}]
+[{"key":"notifyDate","value":"20220311","description":""}]
+[{"key":"notifyMsg","value":"{\"reqCode\":\"031\"}","description":""}]
+
+
+http://127.0.0.1:9883/repository/find/sql/20220311
