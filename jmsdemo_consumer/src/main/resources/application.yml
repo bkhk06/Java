@@ -2,7 +2,7 @@ server:
   port: 9390
 spring:
   activemq:
-    broker-url: failover:(tcp://192.168.11.101:63616,tcp://192.168.11.102:63616)
+    broker-url: failover:(tcp://192.168.11.101:62616,tcp://192.168.11.102:62616)
     user:
     password:
   jms:
