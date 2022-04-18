@@ -23,7 +23,7 @@ public class TopicConsumerListener {
     @Value("${topicName}")
     private static String topicName4;
 
-    Date date=new Date();// 获取当前日期
+    //Date date=new Date();// 获取当前日期
     
     @JmsListener(destination ="${topicName1}",containerFactory = "topicListenerContainerFactory")
     /*,containerFactory = "topicListenerContainerFactory"*/
