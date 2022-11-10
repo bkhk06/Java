@@ -14,7 +14,7 @@
             <groupId>org.apache.pulsar</groupId>
             <artifactId>pulsar-client</artifactId>
             <!--指定你的实际版本号-->
-            <version>2.4.2</version>
+            <version>2.7.5</version>
         </dependency>
 
         <dependency>
