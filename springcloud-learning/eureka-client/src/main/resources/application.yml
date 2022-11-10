@@ -1,6 +1,6 @@
 # 指定运行端口
 server:
-  port: 8302
+  port: 8401
 
 # 指定服务名称
 spring:
