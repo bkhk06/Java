@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="CdmStarted:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/CdmStarted_jar</output-path>
+    <root id="archive" name="CdmStarted.jar">
+      <element id="module-output" name="CdmStarted" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/wrapper.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="CdmStarted:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="04be1fd8-0876-4970-b885-6dda184c7e33" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -7,9 +12,30 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="2UPRidlZAU866l7NJu9J0geYiWq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/wrapper.jar!/" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -23,5 +49,35 @@
       <updated>1692839358070</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="174" key="#Notifications" timestamp="1692845913338">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="552" y="174" key="#Notifications/-1920.0.1920.1032/0.0.1920.1032@0.0.1920.1032" timestamp="1692845913338" />
+    <state x="552" y="174" key="#Project_Structure" timestamp="1692840719935">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="552" y="174" key="#Project_Structure/-1920.0.1920.1032/0.0.1920.1032@0.0.1920.1032" timestamp="1692840719935" />
+    <state x="711" y="367" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1692840472405">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="711" y="367" key="#com.intellij.ide.util.TreeClassChooserDialog/-1920.0.1920.1032/0.0.1920.1032@0.0.1920.1032" timestamp="1692840472405" />
+    <state x="690" y="262" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1692843911392">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="690" y="262" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.0.1920.1032/0.0.1920.1032@0.0.1920.1032" timestamp="1692843911392" />
+    <state x="655" y="324" key="FileChooserDialogImpl" timestamp="1692845376000">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="655" y="324" key="FileChooserDialogImpl/-1920.0.1920.1032/0.0.1920.1032@0.0.1920.1032" timestamp="1692845376000" />
+    <state x="461" y="158" key="SettingsEditor" timestamp="1692845589149">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="461" y="158" key="SettingsEditor/-1920.0.1920.1032/0.0.1920.1032@0.0.1920.1032" timestamp="1692845589149" />
+    <state x="640" y="340" key="com.intellij.ide.util.TipDialog" timestamp="1692839363110">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="640" y="340" key="com.intellij.ide.util.TipDialog/-1920.0.1920.1032/0.0.1920.1032@0.0.1920.1032" timestamp="1692839363110" />
   </component>
 </project>
