@@ -35,7 +35,7 @@
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -67,14 +67,14 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="690" y="262" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.0.1920.1032/0.0.1920.1032@0.0.1920.1032" timestamp="1692843911392" />
-    <state x="655" y="324" key="FileChooserDialogImpl" timestamp="1692845376000">
+    <state x="655" y="324" key="FileChooserDialogImpl" timestamp="1692866351158">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="655" y="324" key="FileChooserDialogImpl/-1920.0.1920.1032/0.0.1920.1032@0.0.1920.1032" timestamp="1692845376000" />
-    <state x="461" y="158" key="SettingsEditor" timestamp="1692845589149">
+    <state x="655" y="324" key="FileChooserDialogImpl/-1920.0.1920.1032/0.0.1920.1032@0.0.1920.1032" timestamp="1692866351158" />
+    <state x="461" y="158" key="SettingsEditor" timestamp="1692924253262">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="461" y="158" key="SettingsEditor/-1920.0.1920.1032/0.0.1920.1032@0.0.1920.1032" timestamp="1692845589149" />
+    <state x="461" y="158" key="SettingsEditor/-1920.0.1920.1032/0.0.1920.1032@0.0.1920.1032" timestamp="1692924253262" />
     <state x="640" y="340" key="com.intellij.ide.util.TipDialog" timestamp="1692839363110">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
