@@ -5,7 +5,7 @@ spring:
     host: 192.168.11.101
     port: 5672
     username: admin
-    password: adcc
+    password: atfmserver@CDM
     #发布确认
     #publisher-confirms: true
     virtual-host: /

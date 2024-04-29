@@ -31,11 +31,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/wrapper.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../rabbitmqdemo1" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -55,13 +55,21 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="552" y="174" key="#Notifications/-1920.0.1920.1032/0.0.1920.1032@0.0.1920.1032" timestamp="1695110591978" />
-    <state x="640" y="340" key="com.intellij.ide.util.TipDialog" timestamp="1701845587760">
+    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1703577452128">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="640" y="340" key="com.intellij.ide.util.TipDialog/-1920.0.1920.1032/0.0.1920.1032@0.0.1920.1032" timestamp="1701845587760" />
-    <state x="334" y="125" key="new project wizard" timestamp="1695775798879">
+    <state x="740" y="271" key="FileChooserDialogImpl/-1920.0.1920.1032/0.0.1920.1032@0.0.1920.1032" timestamp="1703577452128" />
+    <state x="461" y="158" key="SettingsEditor" timestamp="1703577437349">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="334" y="125" key="new project wizard/-1920.0.1920.1032/0.0.1920.1032@0.0.1920.1032" timestamp="1695775798879" />
+    <state x="461" y="158" key="SettingsEditor/-1920.0.1920.1032/0.0.1920.1032@0.0.1920.1032" timestamp="1703577437349" />
+    <state x="640" y="340" key="com.intellij.ide.util.TipDialog" timestamp="1703577300071">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="640" y="340" key="com.intellij.ide.util.TipDialog/-1920.0.1920.1032/0.0.1920.1032@0.0.1920.1032" timestamp="1703577300071" />
+    <state x="334" y="125" key="new project wizard" timestamp="1703577314951">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="334" y="125" key="new project wizard/-1920.0.1920.1032/0.0.1920.1032@0.0.1920.1032" timestamp="1703577314951" />
   </component>
 </project>

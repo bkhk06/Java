@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f81ad84c-581a-4f32-b978-9ace171ef995" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2bOAZGTHGLCNWkWqvNHdB0qVY5D" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="testSpringBoot" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.boot.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f81ad84c-581a-4f32-b978-9ace171ef995" name="Default Changelist" comment="" />
+      <created>1559831957973</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559831957973</updated>
+      <workItem from="1559831961329" duration="1878000" />
+      <workItem from="1559986671925" duration="972000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2850000" />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="490" y="171" key="Maven.ArtifactSearchDialog" timestamp="1706075837049">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="490" y="171" key="Maven.ArtifactSearchDialog/-1920.0.1920.1032/0.0.1920.1032@0.0.1920.1032" timestamp="1706075837049" />
+    <state x="640" y="340" key="com.intellij.ide.util.TipDialog" timestamp="1706076088168">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="-1280" y="340" key="com.intellij.ide.util.TipDialog/-1920.0.1920.1032/0.0.1920.1032@-1920.0.1920.1032" timestamp="1706075807728" />
+    <state x="640" y="340" key="com.intellij.ide.util.TipDialog/-1920.0.1920.1032/0.0.1920.1032@0.0.1920.1032" timestamp="1706076088168" />
+  </component>
+</project>
