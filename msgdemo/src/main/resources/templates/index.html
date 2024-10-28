@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Message App</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { width: 50%; margin: auto; }
+        .message-box { margin-bottom: 20px; }
+        #messageHistory { list-style-type: none; padding: 0; margin: 0; }
+        #messageHistory li { margin: 5px 0; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Message App</h1>
+    <div class="message-box">
+        <input type="text" id="messageContent" placeholder="Enter your message here" required />
+        <button type="button" onclick="sendMessage()">Send</button>
+    </div>
+    <div class="message-box">
+        <h2>Message History</h2>
+        <ul id="messageHistory"></ul>
+    </div>
+</div>
+<script>
+    function sendMessage() {
+        const content = document.getElementById('messageContent').value;
+        fetch('/api/messages/send', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(content)
+        }).then(response => {
+            if (response.ok) {
+                loadMessageHistory();
+                document.getElementById('messageContent').value = ''; // Clear input field
+            } else {
+                alert('Failed to send message');
+            }
+        });
+    }
+
+    function loadMessageHistory() {
+        fetch('/api/messages/history')
+            .then(response => response.json())
+            .then(data => {
+                const messageHistory = document.getElementById('messageHistory');
+                messageHistory.innerHTML = ''; // Clear previous messages
+                data.forEach(message => {
+                    const li = document.createElement('li');
+                    li.textContent = `${new Date(message.timestamp).toLocaleString()}: ${message.content}`;
+                    messageHistory.appendChild(li);
+                });
+            });
+    }
+
+    window.onload = loadMessageHistory; // Load history when page loads
+</script>
+</body>
+</html>

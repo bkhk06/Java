@@ -1,0 +1,15 @@
+server:
+  port: 8081
+spring:
+  jpa:
+    database: oracle
+    show-sql: true
+  datasource:
+      driver-class-name: com.alipay.oceanbase.jdbc.Driver
+      url: jdbc:oceanbase://192.168.11.141:2881/test?characterEncoding=UTF-8
+      username: root
+      password: AdccAdcc06
+#spring.jpa.hibernate.ddl-auto=update
+jackson:
+  serialization:
+    indent_output: true

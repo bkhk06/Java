@@ -13,15 +13,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import com.adcc.mpdemo.controller.RedisUtils;
 import com.adcc.mpdemo.entity.User;
 import com.adcc.mpdemo.mapper.UserMapper;
 import com.baomidou.mybatisplus.core.toolkit.Assert;
 
+import lombok.val;
 import lombok.extern.log4j.Log4j2;
+import lombok.extern.slf4j.Slf4j;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = MpdemoApplication.class)
 @Log4j2
+@Slf4j
 public class MpdemoApplicationTest {
 	private Long starttime;
 	@Rule
@@ -48,6 +52,14 @@ public class MpdemoApplicationTest {
 	}
 
 	@Test
+	public void findTest() throws Exception {
+		List<User> list = userMapper.selectList(null);
+		log.info("print: "+ list);
+
+
+	}
+
+	@Test
     public void testInsert() {
         User userEntity = new User();
         userEntity.setName("张数");
@@ -58,6 +70,19 @@ public class MpdemoApplicationTest {
         System.out.println(count);
         System.out.println(userEntity);
     }
+
+
+	@Autowired
+    RedisUtils redisUtils;
+    
+    @Test
+    void redisTestLoads() {
+        redisUtils.set("test:key:name", "zhang.can");
+        redisUtils.set("test:key:year", "2026");
+        System.out.println(redisUtils.getString("test:key:name2"));
+		System.out.println("缓存设置成功");
+    }
+
 	
 
 	@After

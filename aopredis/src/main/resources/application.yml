@@ -23,6 +23,13 @@ spring:
 
 #开启日志
 mybatis-plus:
+  mapper-locations: classpath*:com/pdh/mapper/*.xml
+  global-config:
+    db-config:
+      table-prefix:
   configuration:
+    # log of sql
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+     # hump
+    map-underscore-to-camel-case: true
 
