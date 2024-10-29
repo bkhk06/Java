@@ -1,0 +1,141 @@
+在Spring Boot中使用RabbitMQ的Fanout Exchange进行消息发布和订阅测试，可以按照以下步骤进行：
+
+添加依赖: 首先确保你的pom.xml文件中包含了Spring Boot和RabbitMQ的相关依赖。
+        
+xml
+复制代码
+<dependencies>
+    <!-- Spring Boot Starter -->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter</artifactId>
+    </dependency>
+    <!-- Spring Boot AMQP Starter -->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-amqp</artifactId>
+    </dependency>
+</dependencies>
+
+    
+配置RabbitMQ连接: 在application.properties或application.yml中配置RabbitMQ的连接信息。
+        
+properties
+复制代码
+spring.rabbitmq.host=localhost
+spring.rabbitmq.port=5672
+spring.rabbitmq.username=guest
+spring.rabbitmq.password=guest
+
+    
+创建Fanout Exchange: 创建一个配置类来定义Fanout Exchange。
+        
+java
+复制代码
+import org.springframework.amqp.core.Binding;
+import org.springframework.amqp.core.BindingBuilder;
+import org.springframework.amqp.core.FanoutExchange;
+import org.springframework.amqp.core.Queue;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class RabbitConfig {
+
+    public static final String FANOUT_EXCHANGE = "fanoutExchange";
+    public static final String QUEUE1 = "queue1";
+    public static final String QUEUE2 = "queue2";
+
+    @Bean
+    public FanoutExchange fanoutExchange() {
+        return new FanoutExchange(FANOUT_EXCHANGE);
+    }
+
+    @Bean
+    public Queue queue1() {
+        return new Queue(QUEUE1);
+    }
+
+    @Bean
+    public Queue queue2() {
+        return new Queue(QUEUE2);
+    }
+
+    @Bean
+    public Binding binding1(FanoutExchange fanoutExchange, Queue queue1) {
+        return BindingBuilder.bind(queue1).to(fanoutExchange);
+    }
+
+    @Bean
+    public Binding binding2(FanoutExchange fanoutExchange, Queue queue2) {
+        return BindingBuilder.bind(queue2).to(fanoutExchange);
+    }
+}
+
+    
+发送消息: 创建一个服务类来发送消息到Fanout Exchange。
+        
+java
+复制代码
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class MessageSender {
+
+    @Autowired
+    private RabbitTemplate rabbitTemplate;
+
+    public void sendMessage(String message) {
+        rabbitTemplate.convertAndSend(RabbitConfig.FANOUT_EXCHANGE, "", message);
+    }
+}
+
+    
+接收消息: 创建监听器来接收来自队列的消息。
+        
+java
+复制代码
+import org.springframework.amqp.rabbit.annotation.RabbitListener;
+import org.springframework.stereotype.Component;
+
+@Component
+public class MessageReceiver {
+
+    @RabbitListener(queues = RabbitConfig.QUEUE1)
+    public void receiveMessageFromQueue1(String message) {
+        System.out.println("Received from Queue1: " + message);
+    }
+
+    @RabbitListener(queues = RabbitConfig.QUEUE2)
+    public void receiveMessageFromQueue2(String message) {
+        System.out.println("Received from Queue2: " + message);
+    }
+}
+
+    
+测试: 编写一个简单的控制器或单元测试来发送消息并验证消息是否被正确接收。
+        
+java
+复制代码
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class TestController {
+
+    @Autowired
+    private MessageSender messageSender;
+
+    @GetMapping("/send")
+    public String sendMessage(@RequestParam String message) {
+        messageSender.sendMessage(message);
+        return "Message sent: " + message;
+    }
+}
+
+    
+启动Spring Boot应用后，访问http://localhost:8080/send?message=HelloWorld，你应该会在控制台看到两个队列都收到了相同的消息。这表明Fanout Exchange已经成功配置并且工作正常。
