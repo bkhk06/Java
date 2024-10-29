@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message App</title>
+    <style>
+        /* styles.css */
+        #data-container {
+            margin: 20px;
+        }
+
+        .item {
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 5px;
+        }
+
+        #pagination-controls {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .page-number {
+            display: inline-block;
+            margin: 0 5px;
+            cursor: pointer;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+        }
+
+        .page-number.active {
+            background-color: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+        <h1>Message App</h1>
+        <div class="message-box">
+            <input type="text" id="messageContent" placeholder="Enter your message here" required />
+            <button type="button" onclick="sendMessage()">Send</button>
+        </div>
+        <div class="message-box">
+            <h2>Message History</h2>
+            <div class="message-history-container">
+                <ul id="messageHistory"></ul>
+            </div>
+            <div class="pagination">
+                <button onclick="prevPage()">Previous</button>
+                <span id="pageInfo"></span>
+                <button onclick="nextPage()">Next</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            //const data = Array.from({ length: 100 }, (_, i) => `Item ${i + 1}`); // 模拟数据
+            const itemsPerPage = 10;
+            let currentPage = 1;
+			
+			function sendMessage() {
+            const content = document.getElementById('messageContent').value;
+            console.log("Message Content:", content); // Add log output for debugging
+            if (!content) {
+                alert("Message content cannot be empty");
+                return;
+            }
+            fetch('/api/messages/send', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(content)
+            }).then(response => {
+                if (response.ok) {
+                    loadMessageHistory();
+                    document.getElementById('messageContent').value = ''; // Clear input field
+                } else {
+                    alert('Failed to send message');
+                }
+            });
+        }
+
+        function loadMessageHistory() {
+            fetch(`/api/messages/history?page=${currentPage}&limit=${itemsPerPage}`)
+                .then(response => response.json())
+                .then(data => {
+                    const messageHistory = document.getElementById('messageHistory');
+                    messageHistory.innerHTML = ''; // Clear previous messages
+                    data.forEach(message => {
+                        const li = document.createElement('li');
+                        li.textContent = `${new Date(message.timestamp).toLocaleString()}: ${message.content}`;
+                        messageHistory.appendChild(li);
+                    });
+                    updatePaginationInfo(data.totalMessages);
+                });
+        }
+
+            function renderData() {
+                const startIndex = (currentPage - 1) * itemsPerPage;
+                const endIndex = startIndex + itemsPerPage;
+                const paginatedItems = data.slice(startIndex, endIndex);
+
+                const dataContainer = document.getElementById('data-container');
+                dataContainer.innerHTML = '';
+                paginatedItems.forEach(item => {
+                    const itemElement = document.createElement('div');
+                    itemElement.className = 'item';
+                    itemElement.textContent = item;
+                    dataContainer.appendChild(itemElement);
+                });
+            }
+
+            function renderPaginationControls() {
+                const totalPages = Math.ceil(data.length / itemsPerPage);
+                const paginationControls = document.getElementById('pagination-controls');
+                paginationControls.innerHTML = '';
+
+                for (let i = 1; i <= totalPages; i++) {
+                    const pageNumberElement = document.createElement('span');
+                    pageNumberElement.className = 'page-number';
+                    if (i === currentPage) {
+                        pageNumberElement.classList.add('active');
+                    }
+                    pageNumberElement.textContent = i;
+                    pageNumberElement.addEventListener('click', () => {
+                        currentPage = i;
+                        renderData();
+                        renderPaginationControls();
+                    });
+                    paginationControls.appendChild(pageNumberElement);
+                }
+            }
+
+            renderData();
+            renderPaginationControls();
+        });
+    </script>
+</body>
+</html>

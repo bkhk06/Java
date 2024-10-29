@@ -90,6 +90,7 @@
             fetch('/api/messages/send', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
+                //body: JSON.stringify({ content })//导致入库多content内容
                 body: JSON.stringify(content)
             }).then(response => {
                 if (response.ok) {

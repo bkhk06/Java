@@ -28,31 +28,33 @@
 
         .message-history-container {
             height: 400px;
+            /* 设置固定高度 */
             overflow-y: auto;
+            /* 垂直滚动条 */
             border: 1px solid #ccc;
+            /* 边框 */
             padding: 10px;
+            /* 内边距 */
         }
 
         #messageHistory {
             list-style-type: none;
+            /* 去掉默认的列表样式 */
             padding: 0;
+            /* 去掉默认的内边距 */
         }
 
         #messageHistory li {
             margin: 5px 0;
+            /* 每个消息项之间的间距 */
             padding: 5px;
+            /* 内边距 */
             background-color: #f9f9f9;
+            /* 背景色 */
             border: 1px solid #ddd;
+            /* 边框 */
             border-radius: 4px;
-        }
-
-        .pagination {
-            text-align: center;
-            margin-top: 10px;
-        }
-
-        .pagination button {
-            margin: 0 5px;
+            /* 圆角 */
         }
     </style>
 </head>
@@ -61,28 +63,20 @@
     <div class="container">
         <h1>Message App</h1>
         <div class="message-box">
-            <input type="text" id="messageContent" placeholder="Enter your message here" required />
-            <button type="button" onclick="sendMessage()">Send</button>
+            <input type="text" id="messageInput" placeholder="Enter your message here" required />
+            <button onclick="sendMessage()">Send</button>
         </div>
         <div class="message-box">
             <h2>Message History</h2>
             <div class="message-history-container">
                 <ul id="messageHistory"></ul>
             </div>
-            <div class="pagination">
-                <button onclick="prevPage()">Previous</button>
-                <span id="pageInfo"></span>
-                <button onclick="nextPage()">Next</button>
-            </div>
         </div>
     </div>
     <script>
-        let currentPage = 1;
-        const itemsPerPage = 10; // Number of messages per page
-
         function sendMessage() {
-            const content = document.getElementById('messageContent').value;
-            console.log("Message Content:", content); // Add log output for debugging
+            const content = document.getElementById('messageInput').value;
+            console.log("Message Content:", content); // 添加日志输出以调试
             if (!content) {
                 alert("Message content cannot be empty");
                 return;
@@ -90,19 +84,20 @@
             fetch('/api/messages/send', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(content)
+                body: JSON.stringify({ content })
             }).then(response => {
                 if (response.ok) {
-                    loadMessageHistory();
-                    document.getElementById('messageContent').value = ''; // Clear input field
+                    loadMessageHistory(); // Update the message history after sending a new message
+                    document.getElementById('messageInput').value = ''; // Clear the input field
                 } else {
                     alert('Failed to send message');
                 }
             });
         }
 
+
         function loadMessageHistory() {
-            fetch(`/api/messages/history?page=${currentPage}&limit=${itemsPerPage}`)
+            fetch('/api/messages/history')
                 .then(response => response.json())
                 .then(data => {
                     const messageHistory = document.getElementById('messageHistory');
@@ -112,25 +107,9 @@
                         li.textContent = `${new Date(message.timestamp).toLocaleString()}: ${message.content}`;
                         messageHistory.appendChild(li);
                     });
-                    updatePaginationInfo(data.totalMessages);
+                    // Scroll to the bottom of the message history container
+                    messageHistory.parentElement.scrollTop = messageHistory.parentElement.scrollHeight;
                 });
-        }
-
-        function updatePaginationInfo(totalMessages) {
-            const totalPages = Math.ceil(totalMessages / itemsPerPage);
-            document.getElementById('pageInfo').textContent = `Page ${currentPage} of ${totalPages}`;
-        }
-
-        function nextPage() {
-            currentPage++;
-            loadMessageHistory();
-        }
-
-        function prevPage() {
-            if (currentPage > 1) {
-                currentPage--;
-                loadMessageHistory();
-            }
         }
 
         window.onload = loadMessageHistory; // Load history when page loads
